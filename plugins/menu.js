@@ -14,7 +14,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
+        let dec = `╭━━━〔 𝐃𝐈𝐋𝐒𝐇𝐀𝐍 𝐌𝐃 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : 🧑‍💻Dilshan Ashinsa🧑‍💻
 ┃★│ Baileys : Multi Device
@@ -189,7 +189,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• ytv
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.CAPTION}`;
+
+> ©ᴘᴏᴡᴇʀᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
         await conn.sendMessage(
             from,
