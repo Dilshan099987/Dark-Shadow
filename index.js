@@ -179,6 +179,27 @@ m.react(`💀`)
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup  && config.MODE === "groups") return
+if (config.AUTO_REPLY === "false") return
+if (config.AUTO_VOICE === "false") return
+if (config.AUTO_STICKER === "false") return
+if (config.AUTO_READ_STATUS === "false") return
+if (config.AUTO_REACT_STATUS === "false") return
+if (config.ALWAYS_OFFLINE === "true") return
+if (config.AUTO_TYPING === "false") return
+if (config.READ_MESSAGE === "false") return
+if (config.RECORDING === "false") return
+if (config.READ_COMMAND === "false") return
+if (config.AUTO_REACT === "false") return
+if (config.ANTI_LINK === "true") return
+if (config.ANTI_DELETE === "true") return
+if (config.ANTI_CALL === "true") return
+if (config.ANTI_BAD === "true") return
+if (config.ANTI_BOT === "true") return
+if (config.AUTO_BLOCK === "true") return
+if (config.BAD_NO_BLOCK === "true") return
+if (config.AI_CHAT_BOT === "false") return
+if (config.AUTO_NEWS_SENDER === "false") return
+if (config.AUTO_TIKTOK_SENDER === "false") return
 
 /////////////////////////////////////////////////////////////       
  
