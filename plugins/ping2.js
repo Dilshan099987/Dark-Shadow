@@ -41,7 +41,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: 'https://whatsapp.com/channel/0029Vb691MgG8l5GHg8HgI3b',
+                    newsletterJid: '120363419308807922@newsletter',
                     newsletterName: "DILSHAN ᴍᴅ",
                     serverMessageId: 143
                 }
