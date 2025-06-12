@@ -226,7 +226,7 @@ cmd(
 2. Document Format 📁
 3. Voice Note Format 🎙️
 
-> ☀©POWERD BY DILSHAN MD`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
       const vv = await frozen.sendMessage(
         from,
