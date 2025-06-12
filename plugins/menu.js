@@ -16,12 +16,12 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         let dec = `👋𝙷𝙴𝙻𝙻𝙾𝚆 *${pushname}* 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙳𝙸𝙻𝚂𝙷𝙰𝙽 𝙼𝙳👈🔥
 ┃★╭──────────────
-┃★│ Owner : 🧑‍💻Dilshan Ashinsa🧑‍💻
-┃★│ Baileys : Multi Device
-┃★│ Type : NodeJs
-┃★│ Platform : Replit
-┃★│ Mode : Public 
-┃★│ Prifix : [.]
+┃★│ Owner : 🧑‍💻*Dilshan Ashinsa*🧑‍💻
+┃★│ Baileys : *Multi Device*
+┃★│ Type : *NodeJs*
+┃★│ Platform : *Replit*
+┃★│ Mode : *Public* 
+┃★│ Prifix : *[.]*
 ┃★│ Version : v 2.0.0 𝗕𝗘𝗧𝗔
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
@@ -195,15 +195,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg` },
+                image: { url: `https://files.catbox.moe/zqu8s7.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363369260614615@newsletter',
-                        newsletterName: 'AWAIS MD',
+                        newsletterJid: '120363419308807922@newsletter',
+                        newsletterName: '𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᴍᴅ',
                         serverMessageId: 143
                     }
                 }
