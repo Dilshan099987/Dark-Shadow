@@ -40,7 +40,7 @@ cmd({
       react: { text: "⬆️", key: m.key }
     });
 
-    const caption = `╭━━━〔 *MEDIAFIRE DOWNLOADER* 〕━━━⊷\n`
+    const caption = `╭━━━〔 *DILSHAN MD MEDIAFIRE DOWNLOADER* 〕━━━⊷\n`
       + `┃▸ *File Name:* ${file_name}\n`
       + `┃▸ *File Type:* ${mime_type}\n`
       + `╰━━━⪼\n\n`
