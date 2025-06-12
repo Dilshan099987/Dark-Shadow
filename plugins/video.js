@@ -212,7 +212,7 @@ cmd(
 
       
       let desc = `
- 🎬DILSHAN MD VIDEO DOWNLOADER 🎬
+ 🎬 DILSHAN MD VIDEO DOWNLOADER 🎬
 
 📌 *Title:* ${ytdata.title}
 🎬 *Channel:* ${ytdata.author.name}
@@ -235,7 +235,7 @@ cmd(
    2.4 - 720p
    2.5 - 1080p
 
-> ©POWERD BY DILSHAN MD🌟`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
  
       const vv = await robin.sendMessage(
