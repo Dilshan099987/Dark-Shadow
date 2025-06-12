@@ -42,7 +42,7 @@ cmd({
 ┇๏ *Link* -  ${yts.url}
 ╰────────────────┈⊷
 
-> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐃𝐈𝐋𝐒𝐇𝐀𝐍_𝐌𝐃 😈`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
         // Send video details
         await conn.sendMessage(from, { image: { url: data.result.thumbnail || '' }, caption: ytmsg }, { quoted: mek });
@@ -99,7 +99,7 @@ cmd({
 ┇๏ *Link* -  ${yts.url}
 ╰────────────────┈⊷
 
-> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐃𝐈𝐋𝐒𝐇𝐀𝐍_𝐌𝐃 😈`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
         
         await conn.sendMessage(from, { image: { url: data.result.thumbnail || '' }, caption: ytmsg }, { quoted: mek });
@@ -112,7 +112,7 @@ cmd({
             document: { url: data.result.download_url }, 
             mimetype: "audio/mpeg", 
             fileName: `${yts.title}.mp3`, 
-            caption: `> *${yts.title}*\n> 🄿🄾🅆🄴🅁🄳 🅱🆈 𝐃𝐈𝐋𝐒𝐇𝐀𝐍_𝐌𝐃 😈`
+            caption: `> *${yts.title}*\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
         }, { quoted: mek });
 
     } catch (e) {
