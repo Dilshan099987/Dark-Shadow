@@ -34,7 +34,7 @@ cmd({
         // Prepare the new message with the updated caption
         const desc = `╭━━━〔 DILSHAN-MD 〕━━━┈⊷
 ┃▸╭───────────
-┃▸┃๏ *PINS DOWNLOADER*
+┃▸┃๏ *DILSHAN MD PINS DOWNLOADER*
 ┃▸└───────────···๏
 ╰────────────────┈⊷
 ╭━━❐━⪼
@@ -42,7 +42,7 @@ cmd({
 ┇๏ *Media Type* - ${media[0].type}
 ╰━━❑━⪼
  
- > ☀©POWERD BY DILSHAN MD`;
+ > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
         // Send the media (video or image) to the user
         if (videoUrl) {
