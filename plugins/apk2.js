@@ -39,7 +39,8 @@ cmd({
 ┃  *Updated On:* ${app.updated}
 ┃  *Developer:* ${app.developer.name}
 ╰━━━━━━━━━━━━━━━┈⊷
-📍 *©Powerd By DILSHAN MD🌟*`;
+
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
     await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
 
