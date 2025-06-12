@@ -15,20 +15,21 @@ const voice = {
                     }
 let des = `*👋 Hello ${pushname}*
 
-*╔╭────────────╮╕*
-*╭│I'm Alive Now!!👋  │─◎◎▷*
-*╘╰────────────╯╜*
-*│A QUEEN-LITHU-MD │Whatsapp Bot Based │Many │Services With A │RealTime* *Automated │Consversational* *││Experience, Enjoy💫.*
-*| So,I Think This Bots Are Useful To You.📍*
-*│*
-*│Type .menu To Get Bot User*
-*│Menu💫*
-*╰───────────────◎◎▷*
- *➣ ʏᴏᴜᴛᴜʙᴇ⚡*= https://www.youtube.com
+╔╭────────────╮╕
+╭│I'm Alive Now!!👋  │─◎◎▷
+╘╰────────────╯╜
+│DILSHAN MD BOT is a powerful WhatsApp Bot ⚙️
+│Providing Real-Time Automated Conversations 🤖
+│and Many Useful Features for Daily Use!💫
+│
+│Type *.menu* to get the full command list 💻
+╰───────────────◎◎▷
 
-*➣ ᴡʜᴀᴛꜱᴀᴘᴘ ᴄʜᴀɴɴᴇʟ⚡* = https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
+➣ 𝐉𝐎𝐈𝐍 𝐓𝐎 𝐌𝐘 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐋𝐈𝐍𝐊👇
+   
+   https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T
 
-*©ᴘᴏᴡᴇʀᴅ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ*`
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
 await conn.sendMessage(from, { audio: { url: voice.alive }, mimetype: 'audio/mp3', ptt: true }, { quoted: mek })
 return await conn.sendMessage(from,{image: {url: `https://ibb.co/F0ccn0P`},caption: des},{quoted: mek})
 }catch(e){
