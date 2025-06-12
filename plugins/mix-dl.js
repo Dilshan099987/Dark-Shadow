@@ -129,7 +129,7 @@ async (conn, mek, m, { from, args, q, reply }) => {
         const caption = `🎵 *DILSHAN-MD TIKTOK VIDEO* 🎵\n\n` +
                         `👤 *USER:* ${author.nickname} (@${author.username})\n` +
                         `📖 *TITLE:* ${title}\n` +
-                        `👍 *LIKES:* ${like}\n💬 *COMMENTS:* ${comment}\n🔁 *SHARES:* ${share}\n\n > ☀©POWERD BY DILSHAN MD`;
+                        `👍 *LIKES:* ${like}\n💬 *COMMENTS:* ${comment}\n🔁 *SHARES:* ${share}\n\n`;
         
         await conn.sendMessage(from, {
             video: { url: videoUrl },
