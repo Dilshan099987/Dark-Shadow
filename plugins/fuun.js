@@ -45,7 +45,7 @@ const axios = require('axios');
                                  const synonyms = definitionData.meanings[0].definitions[0].synonyms.join(', ') || 'No synonyms available';
 
 const wordInfo = `
-*[ •  SILENT-SOBX-MD - DEFINE ‎ • ]*
+*[ • DILSHAN-MD - DEFINE ‎ • ]*
 *╭┈───────────────•*
 *│  ◦* 📚 *WORD*: ${definitionData.word}
 *│  ◦*
@@ -55,11 +55,11 @@ const wordInfo = `
 *│  ◦*
 *│  ◦* 🔗 *SYNONYMS*: ${synonyms}
 *│  ◦*
-*│  ◦* *MADE WITH ♥ SILENT-SOBX-MD*
+*│  ◦* *MADE WITH ♥ DILSHAN-MD*
 *╰┈───────────────•*
 
 *•────────────•⟢*
-> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²*
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ
 *•────────────•⟢*
 `;
 
@@ -86,7 +86,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.message }, caption: 'SILENT-SOBX-MD DOWNLOAD📂DOG PICS\n\n\n> *BY SILENTLOVER432*' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.message }, caption: 'DILSHAN-MD DOWNLOAD📂DOG PICS\n\n\n> *BY DILSHAN ASHINSA*' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`Error Fetching Dog Image🤕: ${e.message}`);
@@ -107,14 +107,14 @@ async (conn, mek, m, { from, q, reply }) => {
         const fact = response.data.text;
 
         const funFact = `
-*[ •  SILENT-SOBX-MD - RANDOM FACT‎ • ]*
+*[ •  DILSHAN-MD - RANDOM FACT‎ • ]*
 *╭┈───────────────•*
 *│  ◦* *${fact}*
 *╰┈───────────────•*
 Isn't that interesting? 😄
 
 *•────────────•⟢*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ
 *•────────────•⟢*
 `;
 
@@ -138,7 +138,7 @@ async (conn, mek, m, { from, q, reply }) => {
         const response = await axios.get(url);
         const joke = response.data;
         const jokeMessage = `
-*[ •  SILENT-SOBX-MD - RANDOM JOKE‎ • ]*
+*[ •  DILSHAN-MD - RANDOM JOKE‎ • ]*
 *╭┈───────────────•*
 *│  ◦* 😂 *Here's a random joke for you!* 😂
 *│  ◦* *${joke.setup}*
@@ -146,7 +146,7 @@ async (conn, mek, m, { from, q, reply }) => {
 *╰┈───────────────•*
 
 *•────────────•⟢*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ
 *•────────────•⟢*
 `;
         return reply(jokeMessage);
@@ -168,15 +168,15 @@ async (conn, mek, m, { from, reply }) => {
         const response = await axios.get('https://api.quotable.io/random');
         const quote = response.data;
         const message = `
-*[ •  SILENT-SOBX-MD - QUOTE ‎ • ]*
+*[ •  DILSHAN-MD - QUOTE ‎ • ]*
 *╭┈───────────────•*
 *│  ◦* 💬 "${quote.content}"
 *│  ◦* - ${quote.author}
-*│  ◦* *QUOTES BY SILENTLOVER432*
+*│  ◦* *QUOTES BY ASHINSA
 *╰┈───────────────•*
 
 *•────────────•⟢*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ
 *•────────────•⟢*
 `;
         return reply(message);
