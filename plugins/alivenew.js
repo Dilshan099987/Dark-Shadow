@@ -31,7 +31,7 @@ let des = `*👋 Hello ${pushname}*
 
 > ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
 await conn.sendMessage(from, { audio: { url: voice.alive }, mimetype: 'audio/mp3', ptt: true }, { quoted: mek })
-return await conn.sendMessage(from,{image: {url: `https://ibb.co/F0ccn0P`},caption: des},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: `https://files.catbox.moe/uod3xi.jpg`},caption: des},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
