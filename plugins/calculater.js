@@ -56,7 +56,7 @@ cmd({
     const _0x4bcd29 = ["Red", "Green", "Blue", "Yellow", "Orange", "Purple", "Pink", "Brown", "Black", "White", "Gray", "Cyan", "Magenta", "Violet", "Indigo", "Teal", "Lavender", "Turquoise"];
     const _0x44ef3a = '#' + Math.floor(Math.random() * 16777215).toString(16);
     const _0x140f13 = _0x4bcd29[Math.floor(Math.random() * _0x4bcd29.length)];
-    _0x526f68(" *`AWAIS-MD RANDOM COLOUR:`* \n\nColour Name: " + _0x140f13 + "\nCode: " + _0x44ef3a);
+    _0x526f68(" *`DILSHAN-MD RANDOM COLOUR:`* \n\nColour Name: " + _0x140f13 + "\nCode: " + _0x44ef3a);
   } catch (_0x1116ab) {
     console.error("Error in .randomcolor command:", _0x1116ab);
     _0x526f68("❌ An error occurred while generating the random color.");
@@ -80,7 +80,7 @@ cmd({
     const _0x52f4fd = _0x4eb2dc.split('').map(_0xc3d6c1 => {
       return ("00000000" + _0xc3d6c1.charCodeAt(0).toString(2)).slice(-8);
     }).join(" ");
-    _0x3292b7(" *`AWAIS-MD BINARY REPRESENTATION:`* \n\n" + _0x52f4fd);
+    _0x3292b7(" *`DILSHAN-MD BINARY REPRESENTATION:`* \n\n" + _0x52f4fd);
   } catch (_0x5e3d86) {
     console.error("Error in .binary command:", _0x5e3d86);
     _0x3292b7("❌ An error occurred while converting to binary.");
@@ -104,7 +104,7 @@ cmd({
     const _0x51228e = _0x293f92.split(" ").map(_0x3fc862 => {
       return String.fromCharCode(parseInt(_0x3fc862, 2));
     }).join('');
-    _0x2f1c72("*`AWAIS-MD KERM DECODED TEXT:`* \n\n" + _0x51228e);
+    _0x2f1c72("*`DILSHAN-MD KERM DECODED TEXT:`* \n\n" + _0x51228e);
   } catch (_0x2c1976) {
     console.error("Error in .binarydecode command:", _0x2c1976);
     _0x2f1c72("❌ An error occurred while decoding the binary string.");
