@@ -14,9 +14,9 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `👋𝙷𝙴𝙻𝙻𝙾𝚆 *${pushname}* 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙳𝙸𝙻𝚂𝙷𝙰𝙽 𝙼𝙳👈🔥
+        let dec = `👋𝙷𝙴𝙻𝙻𝙾𝚆 *${pushname}* 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙳𝙸𝙻𝚂𝙷𝙰𝙽 𝙼𝙳🎉
 ┃★╭──────────────
-┃★│ Owner : 🧑‍💻*Dilshan Ashinsa*🧑‍💻
+┃★│ Owner : *Dilshan Ashinsa*
 ┃★│ Baileys : *Multi Device*
 ┃★│ Type : *NodeJs*
 ┃★│ Platform : *Replit*
