@@ -64,7 +64,7 @@ cmd({
     await reply(
       `*${mediaType} DILSHAN MD URL🔰*\n\n` +
       `URL🖇️ ${mediaUrl}\n\n` +
-      `*🔗ᴅɪʟꜱʜᴀɴ ᴍᴅ🌟*`
+      `*🔗ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ*`
     );
 
   } catch (error) {
