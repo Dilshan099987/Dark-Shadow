@@ -35,9 +35,7 @@ cmd({
 
 *Message:* _${customMessage}_
 
-
-> ©Powerd By DILSHAN MD☀
-`;
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
       try {
         await conn.sendMessage(targetJid, { text: inboxMessage }, { quoted: mek });
@@ -49,7 +47,7 @@ cmd({
 
     // තහවුරු කිරීමේ පණිවිඩය Group එකට
     await conn.sendMessage(from, {
-      text: `*✅ සාර්ථකව ${sentCount}/${totalMembers} දෙනෙකුට Inbox වලට පණිවිඩය යවන ලදී!*\n\n*පණිවිඩය:* _${customMessage}_\n\n> ㋛︎ ᴘᴏᴡᴇʀᴅ ʙʏ  ᴍʀ  ʟᴀᴋꜱɪᴅᴜ ᶜᵒᵈᵉʳ`
+      text: `*✅ සාර්ථකව ${sentCount}/${totalMembers} දෙනෙකුට Inbox වලට පණිවිඩය යවන ලදී!*\n\n*පණිවිඩය:* _${customMessage}_\n\n> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
     }, { quoted: mek });
 
   } catch (error) {
