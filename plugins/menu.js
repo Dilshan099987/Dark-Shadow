@@ -14,10 +14,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━━〔 Hello *${pushname}* gshjsjsjwjwkwkw━━━┈⊷
-
-*👋𝗛𝗲𝗹𝗹𝗼 𝘄𝗲𝗹𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 DILSHAN MD 🎊*
-    
+        let dec = `👋𝗛𝗘𝗟𝗟𝗢𝗪 *${pushname}* 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗✨🌟
 ╭──────────────
 ┃👨‍💻│ Owner : DILSHAN MD
 ┃🧾│ Baileys : Multi Device
@@ -30,71 +27,67 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Download Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• facebook
-┃◈┃• mediafire
-┃◈┃• tiktok
-┃◈┃• twitter
-┃◈┃• Insta
+┃◈┃• fb - [urL]
+┃◈┃• mediafire - [urL]
+┃◈┃• tiktok - [urL]
+┃◈┃• gitclone - [Repo urL]
+┃◈┃• likee - [urL]
+┃◈┃• pindl (pinterest) - [urL]
 ┃◈┃• apk
 ┃◈┃• img
-┃◈┃• play
-┃◈┃• play2
-┃◈┃• audio
+┃◈┃• mp3
 ┃◈┃• video
-┃◈┃• video2
-┃◈┃• ytmp3
+┃◈┃• video4
 ┃◈┃• ytmp4
 ┃◈┃• song
-┃◈┃• darama
-┃◈┃• gdrive
-┃◈┃• smovie
-┃◈┃• baiscope 
-┃◈┃• ginisilia 
+┃◈┃• song9
+┃◈┃• play2
+┃◈┃• ytaudio
+┃◈┃• ytvideo4
+┃◈┃• mp4
+┃◈┃• xvdl
+┃◈┃• urL (ඕනම පොටෝ එහෙක)
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 ╭━━〔 *Group Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• grouplink
-┃◈┃• add
-┃◈┃• remove
-┃◈┃• kick
-┃◈┃• promote 
-┃◈┃• demote
-┃◈┃• dismiss 
-┃◈┃• revoke
-┃◈┃• setgoodbye
-┃◈┃• setwelcome
-┃◈┃• delete 
-┃◈┃• getpic
-┃◈┃• ginfo
-┃◈┃• delete 
-┃◈┃• disappear on
-┃◈┃• disappear off
-┃◈┃• disappear 7D,24H
-┃◈┃• allreq
-┃◈┃• updategname
-┃◈┃• updategdesc
-┃◈┃• joinrequests
-┃◈┃• senddm
-┃◈┃• nikal
 ┃◈┃• mute
 ┃◈┃• unmute
-┃◈┃• lockgc
-┃◈┃• unlockgc
+┃◈┃• lockgs
+┃◈┃• unlockgs
+┃◈┃• leave
+┃◈┃• updategname
+┃◈┃• updategdesc
+┃◈┃• join
 ┃◈┃• invite
-┃◈┃• tag
-┃◈┃• hidetag
+┃◈┃• revoke
+┃◈┃• kick
+┃◈┃• promote
+┃◈┃• demote
 ┃◈┃• tagall
-┃◈┃• tagadmins
+┃◈┃• hidetag
+┃◈┃• taggp
+┃◈┃• ginfo
+┃◈┃• kickall
+┃◈┃• approve
+┃◈┃• requests
+┃◈┃• accept
+┃◈┃• reject
+┃◈┃• del
+┃◈┃• block
+┃◈┃• add
+┃◈┃• end
+┃◈┃• tagadmin
+┃◈┃• boom
+┃◈┃• shutdown
+┃◈┃• broadcast
+┃◈┃• clearchats
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 ╭━━〔 *Owner Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• owner
 ┃◈┃• menu
-┃◈┃• menu2
-┃◈┃• listcmd
-┃◈┃• allmenu
 ┃◈┃• repo
 ┃◈┃• block
 ┃◈┃• unblock
@@ -102,38 +95,39 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• setpp
 ┃◈┃• restart
 ┃◈┃• shutdown
-┃◈┃• updatecmd
 ┃◈┃• alive
 ┃◈┃• ping 
 ┃◈┃• gjid
 ┃◈┃• jid
+┃◈┃• msgall
+┃◈┃• system
+┃◈┃• pair
+┃◈┃• about
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 ╭━━〔 *Fun Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• insult
-┃◈┃• hack
+┃◈┃• define
+┃◈┃• dog
+┃◈┃• fancy
+┃◈┃• fact
 ┃◈┃• joke
-┃◈┃• heart 
-┃◈┃• happy 
+┃◈┃• quote
+┃◈┃• happy
+┃◈┃• heart
+┃◈┃• angry
 ┃◈┃• sad
-┃◈┃• angry 
 ┃◈┃• shy
-┃◈┃• kiss
+┃◈┃• hack
 ┃◈┃• moon
-┃◈┃• cunfuzed
-┃◈┃• hand
-┃◈┃• nikal
+┃◈┃• confuzed
+┃◈┃• hot
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 ╭━━〔 *Convert Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• sticker
-┃◈┃• sticker2
 ┃◈┃• fancy
-┃◈┃• take
-┃◈┃• tomp3
-┃◈┃• tts
 ┃◈┃• trt
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
@@ -141,11 +135,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈╭─────────────·๏
 ┃◈┃• ai
 ┃◈┃• gpt
-┃◈┃• meta
-┃◈┃• blackbox
-┃◈┃• gpt4
-┃◈┃• bing
-┃◈┃• copilot
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 ╭━━〔 *Main Menu* 〕━━┈⊷
@@ -158,14 +147,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• repo
 ┃◈┃• owner
 ┃◈┃• menu
-┃◈┃• menu2
 ┃◈┃• restart
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 ╭━━〔 *Anime Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• dog
-┃◈┃• king
+┃◈┃• niro
+┃◈┃• anime
+┃◈┃• animeboy
 ┃◈┃• animegirl
 ┃◈┃• animegirl
 ┃◈┃• animegirl1
@@ -180,33 +170,28 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• fact
 ┃◈┃• define
 ┃◈┃• news
-┃◈┃• movie
 ┃◈┃• weather
 ┃◈┃• srepo
-┃◈┃• insult
 ┃◈┃• save
-┃◈┃• wikipedia
 ┃◈┃• gpass
 ┃◈┃• githubstalk
-┃◈┃• yts
-┃◈┃• ytv
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙳𝙸𝙻𝚂𝙷𝙰𝙽 𝙼𝙳
+
 > ©ᴘᴏᴡᴇʀᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg` },
+                image: { url: `https://files.catbox.moe/zqu8s7.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363369260614615@newsletter',
-                        newsletterName: 'AWAIS MD',
+                        newsletterJid: ''120363419308807922@newsletter,
+                        newsletterName: '𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᴍᴅ',
                         serverMessageId: 143
                     }
                 }
@@ -216,7 +201,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/VID-20250118-WA0022.mp3' },
+            audio: { url: 'https://files.catbox.moe/g50hun.m4a' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
