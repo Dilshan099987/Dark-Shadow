@@ -15,6 +15,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `👋𝗛𝗘𝗟𝗟𝗢𝗪 *${pushname}* 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗✨🌟
+
 ╭──────────────
 ┃👨‍💻│ Owner : DILSHAN MD
 ┃🧾│ Baileys : Multi Device
