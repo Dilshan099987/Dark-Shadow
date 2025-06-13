@@ -15,15 +15,14 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `👋𝗛𝗘𝗟𝗟𝗢𝗪 *${pushname}* 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗✨🌟
-
-╭──────────────
-┃👨‍💻│ Owner : DILSHAN MD
-┃🧾│ Baileys : Multi Device
-┃📌│ Type : NodeJs
-┃🔖│ Platform : Replit
-┃🔰│ Mode : [public]
-┃☣️│ Prifix : [.]
-┃🛡️│ Version : *3.0.0 Bᴇᴛᴀ*
+┃★╭──────────────
+┃★│ Owner : 🧑‍💻Dilshan Ashinsa🧑‍💻
+┃★│ Baileys : Multi Device
+┃★│ Type : NodeJs
+┃★│ Platform : Replit
+┃★│ Mode : Public 
+┃★│ Prifix : [.]
+┃★│ Version : v 2.0.0 𝗕𝗘𝗧𝗔
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Download Menu* 〕━━┈⊷
@@ -154,9 +153,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ╭━━〔 *Anime Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• dog
-┃◈┃• niro
-┃◈┃• anime
-┃◈┃• animeboy
+┃◈┃  niro
 ┃◈┃• animegirl
 ┃◈┃• animegirl
 ┃◈┃• animegirl1
@@ -179,7 +176,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 
-> ©ᴘᴏᴡᴇʀᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
         await conn.sendMessage(
             from,
@@ -191,7 +188,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: ''120363419308807922@newsletter,
+                        newsletterJid: '120363419308807922@newsletter',
                         newsletterName: '𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᴍᴅ',
                         serverMessageId: 143
                     }
@@ -202,7 +199,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/g50hun.m4a' },
+            audio: { url: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/VID-20250118-WA0022.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
