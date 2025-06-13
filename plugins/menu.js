@@ -14,15 +14,16 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `👋𝗛𝗘𝗟𝗟𝗢𝗪 *${pushname}* 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗✨🌟
+        let dec = `👋𝗛𝗘𝗟𝗟𝗢𝗪 *${pushname}* 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙳𝙸𝙻𝚂𝙷𝙰𝙽 𝙼𝙳✨🌟
+
 ┃★╭──────────────
-┃★│ Owner : 🧑‍💻Dilshan Ashinsa🧑‍💻
-┃★│ Baileys : Multi Device
-┃★│ Type : NodeJs
-┃★│ Platform : Replit
-┃★│ Mode : Public 
-┃★│ Prifix : [.]
-┃★│ Version : v 2.0.0 𝗕𝗘𝗧𝗔
+┃🧑‍💻│ Owner : 🧑‍💻Dilshan Ashinsa🧑‍💻
+┃🧾│ Baileys : Multi Device
+┃📌│ Type : NodeJs
+┃🔖│ Platform : Replit
+┃🔰│ Mode : Public 
+┃☣️│ Prifix : [.]
+┃🛡️│ Version : v 2.0.0 𝗕𝗘𝗧𝗔
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Download Menu* 〕━━┈⊷
