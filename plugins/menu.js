@@ -17,7 +17,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         let dec = `👋𝗛𝗘𝗟𝗟𝗢𝗪 *${pushname}* 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙳𝙸𝙻𝚂𝙷𝙰𝙽 𝙼𝙳✨🌟
 
 ┃★╭──────────────
-┃🧑‍💻│ Owner : 🧑‍💻Dilshan Ashinsa🧑‍💻
+┃🧑‍💻│ Owner : Dilshan Ashinsa
 ┃🧾│ Baileys : Multi Device
 ┃📌│ Type : NodeJs
 ┃🔖│ Platform : Replit
