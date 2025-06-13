@@ -16,7 +16,7 @@ const voice = {
 let des = `*👋 Hello ${pushname}*
 
 ╔╭────────────╮╕
-╭│I'm Alive Now!!👋  │─◎◎▷
+╭│👋I'm Alive Now!!  │─◎◎▷
 ╘╰────────────╯╜
 │DILSHAN MD BOT is a powerful WhatsApp Bot ⚙️
 │Providing Real-Time Automated Conversations 🤖
@@ -29,7 +29,8 @@ let des = `*👋 Hello ${pushname}*
    
    https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T
 
-> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
+ 
+ > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
 await conn.sendMessage(from, { audio: { url: voice.alive }, mimetype: 'audio/mp3', ptt: true }, { quoted: mek })
 return await conn.sendMessage(from,{image: {url: `https://files.catbox.moe/uod3xi.jpg`},caption: des},{quoted: mek})
 }catch(e){
