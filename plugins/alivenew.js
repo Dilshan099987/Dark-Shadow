@@ -1,40 +1,49 @@
-const config = require('../config')
-const {cmd , commands} = require('../command')
+const { cmd, commands } = require('../command');
+const os = require("os");
+const { runtime } = require('../lib/functions');
 
 cmd({
     pattern: "alive",
-    desc: "Check bot online or no.",
+    alias: ["status", "runtime", "uptime"],
+    desc: "Check uptime and system status",
     category: "main",
     react: "👋",
     filename: __filename
 },
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-const voice = {
-    alive: 'https://github.com/Navinofc44/Autovoice-data/raw/refs/heads/main/Converted%20By%20%C2%BBS%CA%9C%C9%9B%CA%9C%CA%8C%CA%80%CA%8C.mp3'
-                    }
-let des = `*👋 Hello ${pushname}*
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        // Generate system status message
+        const status = `┏━❮ 🩵𝐃𝐈𝐋𝐒𝐇𝐀𝐍 𝐌𝐃🩵 ❯━
+┃◈┃🤖 ʙᴏᴛ ɴᴀᴍᴇ :ᴅɪʟꜱʜᴀɴ ᴍᴅ
+┃◈┃🔖 ᴠᴇʀsɪᴏɴ : 2.0.0 ʙᴇᴛᴀ
+┃◈┃📟 ᴘʟᴀᴛғᴏʀᴍ : ʀᴇᴘʟɪᴛ
+┃◈┃👨‍💻ᴏᴡɴᴇʀ: ᴅɪʟꜱʜᴀɴ ᴀꜱʜɪɴꜱᴀ
 
-╔╭────────────╮╕
-╭│👋I'm Alive Now!!  │─◎◎▷
-╘╰────────────╯╜
-│DILSHAN MD BOT is a powerful WhatsApp Bot ⚙️
-│Providing Real-Time Automated Conversations 🤖
-│and Many Useful Features for Daily Use!💫
-│
-│Type *.menu* to get the full command list 💻
-╰───────────────◎◎▷
+┃◈┃📆 ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())} 
+┃◈┃📈ʀᴀᴍ ᴜsᴀɢᴇ: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+┃◈┗━━━━━━━━━━━━━━𖣔𖣔
+╰──────────────┈⊷
 
-➣ 𝐉𝐎𝐈𝐍 𝐓𝐎 𝐌𝐘 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐋𝐈𝐍𝐊👇
-   
-   https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
- 
- > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
-await conn.sendMessage(from, { audio: { url: voice.alive }, mimetype: 'audio/mp3', ptt: true }, { quoted: mek })
-return await conn.sendMessage(from,{image: {url: `https://files.catbox.moe/uod3xi.jpg`},caption: des},{quoted: mek})
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+        // Send the status message with an image
+        await conn.sendMessage(from, { 
+            image: { url: `https://files.catbox.moe/uod3xi.jpg` },  // Image URL
+            caption: status,
+            contextInfo: {
+                mentionedJid: [m.sender],
+                forwardingScore: 1,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: 'ᑕ𝐇𝐀𝐍𝐄𝐋 𝐉𝐈𝐃',
+                    newsletterName: 'DILSHAN MD',
+                    serverMessageId: 143
+                }
+            }
+        }, { quoted: mek });
+
+    } catch (e) {
+        console.error("Error in alive command:", e);
+        reply(`An error occurred: ${e.message}`);
+    }
+});
