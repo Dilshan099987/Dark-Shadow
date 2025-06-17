@@ -4,7 +4,7 @@ cmd({
     pattern: "repo",
     desc: "repo the bot",
     category: "main",
-    react: "📡",
+    react: "⚔️",
     filename: __filename
 },
 
@@ -32,7 +32,7 @@ let dec = `╔══════════════════════
 ║                                    ║
 ╚════════════════════════════════════╝
 `
-await conn.sendMessage(from,{image:{url: ``},caption:dec},{quoted:mek});
+await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/jgnhg4.jpg`},caption:dec},{quoted:mek});
 
 }catch(e){
 console.log(e)
