@@ -32,7 +32,7 @@ let dec = `╔══════════════════════
 ║                                    ║
 ╚════════════════════════════════════╝
 `
-await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/jgnhg4.jpg`},caption:dec},{quoted:mek});
+await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/zqu8s7.jpg`},caption:dec},{quoted:mek});
 
 }catch(e){
 console.log(e)
