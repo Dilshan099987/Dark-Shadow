@@ -77,7 +77,7 @@ cmd({
 
 
     // Send the message
-    const sentMessage = await conn.sendMessage(from,{image: {url: `https://i.ibb.co/TD5qh4JJ/20250224-022914.jpg`},caption: messageText,
+    const sentMessage = await conn.sendMessage(from,{image: {url: `https://files.catbox.moe/1239vg.jpg`},caption: messageText,
     contextInfo: {
                 mentionedJid: ['94779062397@s.whatsapp.net'], // specify mentioned JID(s) if any
                 groupMentions: [],
@@ -323,7 +323,8 @@ cmd({
       `18 ➠ 3D Foil Balloons\n` +
       `19 ➠ 3D Colourful Paint\n` +
       `20 ➠ American Flag 3D\n\n` +
-      `> *ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴅᴇᴇꜱʜᴀ ᴛʜᴀʀᴜᴍɪɴ*`;
+      `
+      > ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
     let sentMessage = await conn.sendMessage(from, {
       text: responseText,
@@ -333,8 +334,8 @@ cmd({
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363192254044294@newsletter',
-                    newsletterName: "Lααɾα-ᴍᴅ ✻",
+                    newsletterJid: '120363419308807922@newsletter',
+                    newsletterName: "𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᴍᴅ",
                     serverMessageId: 999
                 }            
             }
@@ -384,8 +385,8 @@ cmd({
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363192254044294@newsletter',
-                    newsletterName: "Lααɾα-ᴍᴅ ✻",
+                    newsletterJid: '120363419308807922@newsletter',
+                    newsletterName: "𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᴍᴅ",
                     serverMessageId: 999
                 }            
             }
@@ -426,8 +427,8 @@ cmd({
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363192254044294@newsletter',
-                    newsletterName: "Lααɾα-ᴍᴅ ✻",
+                    newsletterJid: '120363419308807922@newsletter',
+                    newsletterName: "𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᴍᴅ",
                     serverMessageId: 999
                 }            
             }
