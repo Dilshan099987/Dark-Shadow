@@ -14,8 +14,8 @@ cmd({
   reply: _0x4cf25d
 }) => {
   try {
-    const _0x3a9262 = `╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
- *Hi 👋*  *${pushname}*
+    const _0x3a9262 = `
+╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
 ┃◈┃• *📟 Ram*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
 ┃◈┃• *👨‍💻 Owner*: Dilshan Ashinsa 
@@ -35,7 +35,7 @@ cmd({
   *│10. OTHER MENU*
   *╰────────────●●►*
   
-  `;
+  > ©powered By DILSHAN MD`;
     const _0x18e40d = {
       'mentionedJid': [_0x5253a9.sender],
       'forwardingScore': 0x3e7,
