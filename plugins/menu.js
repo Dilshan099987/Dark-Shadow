@@ -28,7 +28,6 @@ cmd({
   *│9. WALLPAPERS MENU*🖼
   *│10. OTHER MENU*
   *╰────────────●●►*
-  
   > ©powered By DILSHAN MD`;
     const _0x18e40d = {
       'mentionedJid': [_0x5253a9.sender],
