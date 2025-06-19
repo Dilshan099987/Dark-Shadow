@@ -1,229 +1,314 @@
-const config = require('../config')
+const {readEnv} = require('../lib/database');
 const { cmd, commands } = require('../command');
-const os = require("os")
-const {runtime} = require('../lib/functions')
-const axios = require('axios')
+const os = require("os");
+const { runtime } = require('../lib/functions');
+const imageUrl = 'https://i.ibb.co/Z1fR1tgh/7315.jpg';
 
 cmd({
-    pattern: "menu2",
-    alias: "allmenu",
-    desc: "menu the bot",
-    category: "menu",
-    react: "⚡",
+    pattern: "menu",
+    react: "📁",
+    alias: ["panel", "commands"],
+    desc: "Get Bot Menu",
+    category: "main",
+    use: '.menu',
     filename: __filename
-}, 
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+},
+async (conn, mek, m, { from, quoted, pushname, reply }) => {
     try {
-        let dec = ` 👋ℍ𝕖𝕝𝕝𝕠 *${pushname}*...!
+const config = await readEnv();
+        const selectionMessage = `*╭─────────────────❒⁠⁠⁠⁠*
 
-🌟 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗 🌟
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
 
-┃★╭──────────────
-┃★│ Owner : *Dilshan Ashinsa*
-┃★│ Baileys : *Multi Device*
-┃★│ Type : *NodeJs*
-┃★│ Platform : *Replit*
-┃★│ Mode : *Public* 
-┃★│ Prifix : *[.]*
-┃★│ Version : v 2.0.0 𝗕𝗘𝗧𝗔
-┃★╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
-*╭────❒⁠⁠⁠⁠* *📥 DOWNLOADER-MENU 📥* *❒⁠⁠⁠⁠* 
-*┋* *ytdl*
-*┋* *mp4*
-*┋* *video*
-*┋* *ytdl3*
-*┋* *play*
-*┋* *audio*
-*┋* *mp3*
-*┋* *song*
-*┋* *tiktok2*
-*┋* *ttdl2*
-*┋* *tiktokvid2*
-*┋* *ttdown2*
-*┋* *tt2*
-*┋* *tiktokdl2*
-*┋* *tweet*
-*┋* *twdl*
-*┋* *twitter*
-*┋* *mfire*
-*┋* *mediafire*
-*┋* *igdl*
-*┋* *reel*
-*┋* *ig*
-*┋* *instadl*
-*┋* *insta*
-*┋* *searchpin*
-*┋* *image*
-*┋* *img*
-*┋* *facebook*
-*┋* *fbdl*
-*┋* *fb*
-*┋* *apk*
-*┋* *ringtones*
-*┋* *ring*
-*┋* *ringtone*
-*┋* *instadl*
-*┋* *ig*
-*┋* *mediafire*
-*┋* *reel*
-*┋* *insta*
-*┋* *gdrive*
-*┋* *pin*
-*┋* *pindownload*
-*┋* *pins*
-*┋* *pinterestdl*
-*┋* *ytcommunity*
-*┋* *pindl*
-*┋* *ytpost*
-*┋* *tt*
-*┋* *tiktok*
-*┋* *gdrtiktokdlive*
-*┋* *ttdl*
-*╰───────────────────❒*
-*╭────❒⁠⁠⁠⁠* *👨‍💻 OWNER-MENU 👨‍💻* *❒⁠⁠⁠⁠* 
-*┋* *update*
-*┋* *restart*
-*┋* *shutdown*
-*┋* *boom*
-*┋* *groupvcf*
-*┋* *vcf*
-*┋* *gjid*
-*┋* *hidetag*
-*┋* *clearchats*
-*┋* *unblock*
-*┋* *block*
-*┋* *setpp*
-*┋* *broadcast*
-*┋* *jid*
-*┋* *count*
-*┋* *setting*
-*┋* *settings*
-*╰───────────────────❒*
-*╭────❒⁠⁠⁠⁠* *⛱️ FUN-MENU ⛱️* *❒⁠⁠⁠⁠* 
-*┋* *hack*
-*┋* *nikal*
-*┋* *hot*
-*┋* *confused*
-*┋* *moon*
-*┋* *shy*
-*┋* *sad*
-*┋* *angry*
-*┋* *heart*
-*┋* *happy*
-*╰───────────────────❒
-*╭────❒⁠⁠⁠⁠* *🔄 CONVERTER-MENU 🔄* *❒⁠⁠⁠⁠* 
-*┋* *tts2*
-*┋* *tourl*
-*┋* *url*
-*┋* *img2url*
-*┋* *imgtourl*
-*┋* *s*
-*┋* *stickergif*
-*┋* *sticker*
-*┋* *stake*
-*┋* *rename*
-*┋* *take*
-*╰───────────────────❒*
-*╭────❒⁠⁠⁠⁠* *🧠 AI-MENU 🧠* *❒⁠⁠⁠⁠* 
-*┋* *ai*
-*┋* *openai*
-*┋* *chatgpt*
-*┋* *open-gpt*
-*┋* *deepseek*
-*┋* *bing*
-*┋* *gpt*
-*┋* *dj*
-*┋* *gpt3*
-*┋* *gpt4*
-*┋* *seekai*
-*┋* *deep*
-*╰───────────────────❒*
-*╭────❒⁠⁠⁠⁠* *🏜️ MAIN-MENU 🏜️* *❒⁠⁠⁠⁠* 
-*┋* *animegirl1*
-*┋* *animegirl2*
-*┋* *animegirl3*
-*┋* *animegirl4*
-*┋* *animegirl5*
-*┋* *Coming Soon*
-*┋* *couple*
-*┋* *cpp*
-*┋* *couplepp*
-*┋* *searchpin*
-*┋* *pinterest*
-*┋* *image*
-*┋* *img*
-*┋* *wallpaper*
-*┋* *randomwall*
-*┋* *rw*
-*╰───────────────────❒*
-*╭────❒⁠⁠⁠⁠* *💖 ANIME-MENU 💖* *❒⁠⁠⁠⁠* 
-*┋* *animegirl1*
-*┋* *animegirl2*
-*┋* *animegirl3*
-*┋* *animegirl4*
-*┋* *animegirl5*
-*┋* *Coming Soon*
-*┋* *couple*
-*┋* *cpp*
-*┋* *couplepp*
-*┋* *searchpin*
-*┋* *pinterest*
-*┋* *image*
-*┋* *img*
-*┋* *wallpaper*
-*┋* *randomwall*
-*┋* *rw*
-*╰───────────────────❒*
-*╭────❒⁠⁠⁠⁠*🌟 *OTHER-MENU 🌟* *❒⁠⁠⁠⁠* 
-*┋* *animegirl1*
-*┋* *animegirl2*
-*┋* *animegirl3*
-*┋* *animegirl4*
-*┋* *animegirl5*
-*┋* *Coming Soon*
-*┋* *couple*
-*┋* *cpp*
-*┋* *couplepp*
-*┋* *searchpin*
-*┋* *pinterest*
-*┋* *image*
-*┋* *img*
-*┋* *wallpaper*
-*┋* *randomwall*
-*┋* *rw*
-*╰───────────────────❒*
+     *${pushname}*
 
-> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
+*┕─────────────────❒*
 
-        await conn.sendMessage(
-            from,
-            {
-                image: { url: `https://files.catbox.moe/zqu8s7.jpg` },
-                caption: dec,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363419308807922@newsletter',
-                        newsletterName: '𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᴍᴅ',
-                        serverMessageId: 143
-                    }
-                }
-            },
-            { quoted: mek }
-        );
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+   *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄᴀꜱᴘᴇʀ-ᴍᴅ ғᴜʟʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-        // Send audio
-        await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/VID-20250118-WA0022.mp3' },
-            mimetype: 'audio/mp4',
-            ptt: true
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ👨🏻‍💻*
+
+*╭───────────────❒⁠⁠⁠⁠*
+*│* *❂ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴏᴍᴍᴀɴᴅs ❂*
+*┕───────────────❒*
+
+*╭───────────────❒⁠⁠⁠⁠*
+*│* *❂ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ❂*
+*┕───────────────❒*
+
+*╭───────────────❒⁠⁠⁠⁠*
+*│* *❂ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅs ❂*
+*┕───────────────❒*
+
+*╭───────────────❒⁠⁠⁠⁠*
+*│* *❂ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅs ❂*
+*┕───────────────❒*
+
+*╭───────────────❒⁠⁠⁠⁠*
+*│* *❂ᴄᴏɴᴠᴇʀᴛ ᴄᴏᴍᴍᴀɴᴅs ❂*
+*┕───────────────❒*
+
+*╭─────────────────❒⁠⁠⁠⁠*
+*│* *❂sᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅs ❂*
+*┕─────────────────❒*
+
+*❒⁠⁠⁠⁠▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭❒*⁠⁠⁠⁠
+
+> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ 〽️ᴅ*
+
+╰━❁ ═══ ❃•⇆•❃ ═══ ❁━╯
+`;
+
+        const sentMsg = await conn.sendMessage(from, {
+            image: { url: imageUrl },
+            caption: selectionMessage,
+            contextInfo: { forwardingScore: 999, isForwarded: true },
         }, { quoted: mek });
-        
+
+        // පරිශීලක ප්‍රතිචාර ලබා ගැනීම
+        conn.ev.on('messages.upsert', async (msgUpdate) => {
+            const msg = msgUpdate.messages[0];
+            if (!msg.message || !msg.message.extendedTextMessage) return;
+
+            const userResponse = msg.message.extendedTextMessage.text.trim();
+            if (msg.message.extendedTextMessage.contextInfo &&
+                msg.message.extendedTextMessage.contextInfo.stanzaId === sentMsg.key.id) {
+
+                let responseText;
+
+                switch (userResponse) {
+                    case 'dlmenu': // DOWNLOAD MENU
+                        responseText = `
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
+
+     *${pushname}*
+     
+❁ ════ ❃•◯•❃ ════ ❁
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄᴀꜱᴘᴇʀ-ᴍᴅ ғᴜʟʟ ᴅʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ👨🏻‍💻*
+
+
+*╭──❮ DOWNLOAD COMMANDS ❯*
+│
+│📖 COMMAND: .play
+│ℹ️ Download Audio from yt
+│ 
+│📖 COMMAND: .song
+│ℹ️ Download song from yt
+│ 
+│📖 COMMAND: .apk
+│ℹ️ Download apk from playstore
+│ 
+│📖 COMMAND: .video
+│ℹ️ Download video from yt
+│ 
+│📖 COMMAND: .fb
+│ℹ️ Download  video from fb
+│ 
+│📖 COMMAND: .tk
+│ℹ️ Download video from tiktok
+│ 
+│📖 COMMAND: .ig
+│ℹ️ Download video from ig
+│ 
+│📖 COMMAND: .gdrive
+│ℹ️ Download drive files
+│ 
+│📖 COMMAND: .wamod
+│ℹ️ Download wamod apk
+│
+│📖 COMMAND: .img
+│ℹ️ Download image
+│
+│📖 COMMAND: .darama
+│ℹ️ Download full episode video
+╰────────────⦁
+`;
+
+                        break;
+                    case 'semenu': // SEARCH MENU
+                        responseText = `❁ ════ ❃•◯•❃ ════ ❁
+
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
+
+     *${pushname}*
+     
+❁ ════ ❃•◯•❃ ════ ❁
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄᴀꜱᴘᴇʀ-ᴍᴅ  ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ👨🏻‍💻*
+
+
+────────────⦁ 
+
+*╭──❮ SEARCH COMMANDS ❯*
+│
+│📖 COMMAND: .yts
+│ℹ️ Serch videos from yt
+╰────────────⦁
+`;
+                        break;
+                    case 'ownermenu': // OWNER MENU
+                        responseText = `❁ ════ ❃•◯•❃ ════ ❁
+
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
+
+     *${pushname}*
+     
+❁ ════ ❃•◯•❃ ════ ❁
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄᴀꜱᴘᴇʀ-ᴍᴅ  ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ👨🏻‍💻*
+
+
+*╭──❮ OWNER COMMANDS ❯*
+│
+│📖 COMMAND: .update
+│ℹ️ update bot velue 
+│
+│📖 COMMAND: .restart 
+│ℹ️ restart your bot
+╰────────────⦁
+`;
+                        break;
+                    case 'gmenu': // GROUP MENU
+                        responseText = `❁ ════ ❃•◯•❃ ════ ❁
+
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
+
+     *${pushname}*
+     
+❁ ════ ❃•◯•❃ ════ ❁
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄᴀꜱᴘᴇʀ-ᴍᴅ  ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ👨🏻‍💻*
+
+
+────────────⦁
+
+*╭──❮ GROUP COMMANDS ❯*
+│
+│📖 COMMAND: .mute
+│ℹ️ Mute group
+│
+│📖 COMMAND: .unmute
+│ℹ️ Unmute group
+│
+│📖 COMMAND: .left
+│ℹ️ left group
+│
+│📖 COMMAND: .jid
+│ℹ️ group jid
+╰────────────⦁
+`;
+                        break;
+                    case 'mainmenu': // MAIN MENU
+                        responseText = `❁ ════ ❃•◯•❃ ════ ❁
+
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
+
+     *${pushname}*
+     
+❁ ════ ❃•◯•❃ ════ ❁
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄᴀꜱᴘᴇʀ-ᴍᴅ  ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ👨🏻‍💻*
+
+────────────⦁  
+
+*╭──❮‍ MAIN COMMANDS ❯*
+│
+│📖 COMMAND: .alive
+│ℹ️ Check online or not
+│  
+│📖 COMMAND: .ping
+│ℹ️ Check bot speed
+│  
+│📖 COMMAND: .menu
+│ℹ️ Nero main menu
+│
+│📖 COMMAND: .menu2
+│ℹ️ Nero main menu2
+│ 
+│📖 COMMAND: .ai
+│ℹ️ chat with ai bot
+│
+│📖 COMMAND: .system
+│ℹ️ check bot systems
+│
+│📖 COMMAND: .owner
+│ℹ️ get owner info
+│ 
+│📖 COMMAND: .status
+│ℹ️ check bot runtime
+╰────────────⦁
+`;
+                        
+                        break;
+                    case 'olthermenu': // OLTHER MENU
+                        responseText = `❁ ════ ❃•◯•❃ ════ ❁
+
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
+
+     *${pushname}*
+     
+❁ ════ ❃•◯•❃ ════ ❁
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄᴀꜱᴘᴇʀ-ᴍᴅ  ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄᴀꜱᴘᴇʀ👨🏻‍💻*
+
+────────────⦁
+
+*╭──❮ OTHER COMMANDS ❯*
+│
+│📖 COMMAND: .hirunews/news
+│ℹ️ Get news result for life
+│ 
+│📖 COMMAND: .wabeta
+│ℹ️ Get whatsapp beta news
+│
+│📖 COMMAND: .sitech
+│ℹ️ Get tech news
+│ 
+│📖 COMMAND: .nasa
+│ℹ️ Get nasa news
+╰────────────⦁
+`;
+
+                        break;
+                    default:
+                        responseText = "*❌ Invalid option. Please enter a valid text *";
+                }
+
+                // තෝරාගත් මෙනුව WhatsApp chat එකට යවයි.
+                await conn.sendMessage(from, { text: responseText }, { quoted: mek });
+            }
+        });
+
     } catch (e) {
-        console.log(e);
-        reply(`${e}`);
+        console.error(e);
+        reply(`*⚠ An error occurred: ${e.message}*`);
     }
 });
+
