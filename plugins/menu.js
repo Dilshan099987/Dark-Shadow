@@ -79,7 +79,7 @@ const config = await readEnv();
                 let responseText;
 
                 switch (userResponse) {
-                    case 'dlmenu': // DOWNLOAD MENU
+                    case '1': // DOWNLOAD MENU
                         responseText = `
 *⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
 
