@@ -175,23 +175,24 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *┋* *randomwall*
 *┋* *rw*
 *╰───────────────────❒*
-╭━━〔 *Other Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• fact
-┃◈┃• define
-┃◈┃• news
-┃◈┃• movie
-┃◈┃• weather
-┃◈┃• srepo
-┃◈┃• insult
-┃◈┃• save
-┃◈┃• wikipedia
-┃◈┃• gpass
-┃◈┃• githubstalk
-┃◈┃• yts
-┃◈┃• ytv
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+*╭────❒⁠⁠⁠⁠*🌟 *OTHER-MENU 🌟* *❒⁠⁠⁠⁠* 
+*┋* *animegirl1*
+*┋* *animegirl2*
+*┋* *animegirl3*
+*┋* *animegirl4*
+*┋* *animegirl5*
+*┋* *Coming Soon*
+*┋* *couple*
+*┋* *cpp*
+*┋* *couplepp*
+*┋* *searchpin*
+*┋* *pinterest*
+*┋* *image*
+*┋* *img*
+*┋* *wallpaper*
+*┋* *randomwall*
+*┋* *rw*
+*╰───────────────────❒*
 
 > ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
