@@ -112,18 +112,15 @@ let madeMenu = `
 *┋* *deep*
 *╰───────────────────❒*
  ╭────❒⁠⁠⁠⁠* *🧠 MAIN-MENU 🧠 *❒⁠⁠⁠⁠*
-*┋* *ai*
-*┋* *openai*
-*┋* *chatgpt*
-*┋* *open-gpt*
-*┋* *deepseek*
-*┋* *bing*
-*┋* *gpt*
-*┋* *dj*
-*┋* *gpt3*
-*┋* *gpt4*
-*┋* *seekai*
-*┋* *deep*
+*┋* *ping*
+*┋* *ping2*
+*┋* *alive*
+*┋* *runtime*
+*┋* *uptime*
+*┋* *repo*
+*┋* *owner*
+*┋* *menu*
+*┋* *restart*
 *╰───────────────────❒*
 *╭────❒⁠⁠⁠⁠* *⛱️ FUN-MENU ⛱️* *❒⁠⁠⁠⁠* 
 *┋* *hack*
@@ -215,11 +212,6 @@ let madeMenu = `
 *┋* *timenow*
 *┋* *rate*
 *╰───────────────────❒*
-╭──────────●●►
- 🛠️ *𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮*
-  ───────
- ${menu.tools}
-╰───────────●●►
 
 > ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
 
