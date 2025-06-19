@@ -14,13 +14,7 @@ cmd({
   reply: _0x4cf25d
 }) => {
   try {
-    const _0x3a9262 = `
-╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
-┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
-┃◈┃• *📟 Ram*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
-┃◈┃• *👨‍💻 Owner*: Dilshan Ashinsa 
-┃◈┃• *🧬 Version*: 2.0.0 BETA
-┃◈┃• *⚙️ Platform:-* Replit 
+    const _0x3a9262 = ` 
   *DILSHAN_MD Command List*
 ╰━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷> *╭────────────●●►*
   *│1. DOWNLOAD MENU*📥
