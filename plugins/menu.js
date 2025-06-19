@@ -100,23 +100,18 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *┋* *setting*
 *┋* *settings*
 *╰───────────────────❒*
-╭━━〔 *Fun Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• insult
-┃◈┃• hack
-┃◈┃• joke
-┃◈┃• heart 
-┃◈┃• happy 
-┃◈┃• sad
-┃◈┃• angry 
-┃◈┃• shy
-┃◈┃• kiss
-┃◈┃• moon
-┃◈┃• cunfuzed
-┃◈┃• hand
-┃◈┃• nikal
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+*╭────❒⁠⁠⁠⁠* *⛱️ FUN-MENU ⛱️* *❒⁠⁠⁠⁠* 
+*┋* *hack*
+*┋* *nikal*
+*┋* *hot*
+*┋* *confused*
+*┋* *moon*
+*┋* *shy*
+*┋* *sad*
+*┋* *angry*
+*┋* *heart*
+*┋* *happy*
+*╰───────────────────❒
 ╭━━〔 *Convert Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• sticker
