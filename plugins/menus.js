@@ -40,8 +40,8 @@ async (conn, mek, m, { from, quoted, pushname, reply }) => {
 *│10. 𝐎ᴛʜᴇʀ 𝐌ᴇɴᴜ 🌐*
 *│11. 𝐀𝚞𝚝𝚘 𝐌ᴇɴᴜ 📌*
 *╰────────────●●►*
-𝐑ᴇᴘʟʏ 𝐓ʜᴇ 𝐍ᴜᴍʙᴇʀ 𝐘ᴏᴜ 𝐖ᴀɴᴛ 𝐓ᴏ 𝐒ᴇʟᴇᴄᴛ.......👁️❗
-`;
+
+> ©powered by Dilshan md`;
 
         const sentMsg = await conn.sendMessage(from, {
             image: { url: imageUrl },
