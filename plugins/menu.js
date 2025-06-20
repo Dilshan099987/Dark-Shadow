@@ -17,11 +17,11 @@ async (conn, mek, m, { from, quoted, pushname, reply }) => {
     try {
         const selectionMessage = `👋 𝐇𝐄𝐋𝐋𝐎, ${pushname}!
 
-✨ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗 ✨ 
+> ✨ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗕𝗢𝗧 ✨ 
 ╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」
-│◈ ℝ𝕌ℕ𝕋𝕀𝕄𝔼 =  ${runtime(process.uptime())}
-│◈ 𝕆𝕎ℕ𝔼ℝ ℕ𝔸𝕄𝔼 = Dilshan Ashinsa 
-│◈ 𝕆𝕎ℕ𝔼ℝ ℕ𝕌𝕄𝔹𝔼ℝ = 94772194789
+│◈ 𝗥𝗨𝗡 𝗧𝗜𝗠𝗘 =  ${runtime(process.uptime())}
+│◈ 𝗢𝗪𝗡𝗘𝗥 𝗡𝗔𝗠𝗘 = Dilshan Ashinsa 
+│◈ 𝗢𝗪𝗡𝗘𝗥 𝗡𝗨𝗠𝗕𝗘𝗥 = 94772194789
 ╰──────────●●►
 *🔢 𝐑ᴇᴘʟʏ 𝐓ʜᴇ 𝐍ᴜᴍʙᴇʀ 𝐘ᴏᴜ 𝐖ᴀɴᴛ 𝐓ᴏ 𝐒ᴇʟᴇᴄᴛ.......🌟*
 
