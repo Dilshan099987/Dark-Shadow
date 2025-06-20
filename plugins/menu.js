@@ -36,7 +36,7 @@ async (conn, mek, m, { from, quoted, pushname, reply }) => {
 8 │ *FUN MENU*
 9 │ *CONVERT MENU*
 
-> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
+> ©𝗣𝗢𝗪𝗘𝗥𝗗 𝗕𝗬 𝗗𝗜𝗟𝗦𝗛𝗔𝗡 𝗠𝗗`;
 
         const sentMsg = await conn.sendMessage(from, {
             image: { url: imageUrl },
