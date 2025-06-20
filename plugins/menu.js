@@ -23,6 +23,7 @@ async (conn, mek, m, { from, quoted, pushname, reply }) => {
 │⇛☢ 𝗢𝗪𝗡𝗘𝗥 𝗡𝗔𝗠𝗘 = Dilshan Ashinsa 
 │⇛☢ 𝗢𝗪𝗡𝗘𝗥 𝗡𝗨𝗠𝗕𝗘𝗥 = 94772194789
 ╰──────────●●►
+
 *🔢 𝐑ᴇᴘʟʏ 𝐓ʜᴇ 𝐍ᴜᴍʙᴇʀ 𝐘ᴏᴜ 𝐖ᴀɴᴛ 𝐓ᴏ 𝐒ᴇʟᴇᴄᴛ.......🌟*
 
 1 │ *OWNER MENU*
