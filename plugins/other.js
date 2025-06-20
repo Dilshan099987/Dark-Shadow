@@ -20,7 +20,7 @@ if(!q) return reply("*_Please give me a song name_*")
 
 const data = await fetchJson(`${apilink}/other/lyrics?text=${q}`)
 	    
-const msg = `*_INFINITY WA BOT SONG LYRICS_*
+const msg = `*_INFINITY DILSHAN BOT SONG LYRICS_*
 
 *Song :* ${data.result.album}
 
@@ -28,7 +28,7 @@ const msg = `*_INFINITY WA BOT SONG LYRICS_*
 
 ${data.result.lyric}
 
-> ɪɴꜰɪɴɪᴛʏ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴅᴀʀᴜ`
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
 
           const contextMsg = {
             mentionedJid: [m.sender],
@@ -72,17 +72,17 @@ const fancyStyle = array.map((fancy, index) => {
             return `${index + 1} || ${array[index].result}` 
         }).join("\n\n")
       
-let msg = `*_INFINITY WA BOT TEXT STYLES_*
+let msg = `*_INFINITY DILSHAN BOT TEXT STYLES_*
 
 *Text :* ${q}
 
 ${fancyStyle}
 
-> ɪɴꜰɪɴɪᴛʏ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴅᴀʀᴜ`
+> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`
 
 const fdChannel = {
-            newsletterJid: "120363352976453510@newsletter",
-            newsletterName: "INFINITY WA BOT",
+            newsletterJid: "120363419308807922@newsletter",
+            newsletterName: "𝗗𝗜𝗟𝗦𝗛𝗔𝗡_ᵐᵈ",
             serverMessageId: 999
           };
           const contextMsg = {
