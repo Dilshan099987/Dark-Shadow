@@ -25,15 +25,16 @@ async (conn, mek, m, { from, quoted, pushname, reply }) => {
 ╰──────────●●►
 *🔢 𝐑ᴇᴘʟʏ 𝐓ʜᴇ 𝐍ᴜᴍʙᴇʀ 𝐘ᴏᴜ 𝐖ᴀɴᴛ 𝐓ᴏ 𝐒ᴇʟᴇᴄᴛ.......🌟*
 
-1 │ OWNER MENU
-2 │ ANIME MENU
-3 │ OTHER MENU
-4 │ GROUP MENU
-5 │ AI MENU
-6 │ MAIN MENU
-7 │ DOWNLOAD MENU
-8 │ REACTION MENU
-9 │ FUN MENU
+1 │ *OWNER MENU*
+2 │ *ANIME MENU*
+3 │ *OTHER MENU*
+4 │ *GROUP MENU*
+5 │ *AI MENU*
+6 │ *MAIN MENU*
+7 │ *DOWNLOAD MENU*
+8 │ *REACTION MENU*
+9 │ *FUN MENU*
+10│ *CONVERT MENU*
 
 > ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅɪʟꜱʜᴀɴ ᴍᴅ`;
 
