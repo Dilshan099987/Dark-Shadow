@@ -26,13 +26,13 @@
     "vm": "^0.1.0",
     "qrcode-terminal": "^0.12.0",
     "yt-search":"2.11.1",
-     "mongoose":"8.5.3",
+    "mongoose":"8.5.3",
     "wa-sticker-formatter": "^4.3.2",
     "api-dylux":"1.8.5",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@dark-yasiya/yt-dl.js": "latest",
-    "google-tts-api": "^2.0.2"
-    
+    "google-tts-api": "^2.0.2",
+    "ruhend-scraper": "^9.0.1"
     
     
     
